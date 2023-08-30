@@ -32,6 +32,7 @@ function MusicCard({ song }: MusicsProps) {
         </label>
         <input
           data-testid={ `favorited-${song.trackId}` }
+          id={ `favorited-${song.trackId}` }
           checked={ favorited }
           onChange={ () => {
             setFavorited(!favorited);
