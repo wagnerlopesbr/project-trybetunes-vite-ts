@@ -1,5 +1,5 @@
 import { AlbumType } from '../types';
-import Album from './album';
+import Albuns from './albuns';
 
 type AlbumMapperProps = {
   albuns: AlbumType[];
@@ -11,7 +11,7 @@ function AlbumMapper({ albuns, artistName }: AlbumMapperProps) {
     <div>
       <h2>{`Resultado de álbuns de: ${artistName}`}</h2>
       {albuns.map((album) => (
-        <Album key={ album.collectionId } album={ album } />
+        <Albuns key={ album.collectionId } album={ album } />
       ))}
     </div>
   );
