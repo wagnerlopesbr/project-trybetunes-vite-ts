@@ -11,7 +11,6 @@ function Search() {
   const [loading, setLoading] = useState(false);
   const [albuns, setAlbuns] = useState<AlbumType[]>([]);
   const [searched, setSearched] = useState(false);
-  const navigate = useNavigate();
 
   const buttonValidation = searchInput.length >= 2;
 
